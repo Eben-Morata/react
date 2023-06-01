@@ -1,0 +1,39 @@
+.footer3-container{
+    padding: 20px 10px;   
+}
+.details{
+    position: relative;
+    padding:  10px;
+}
+.details-icon{
+    border: none;
+    box-shadow: 2px 2px 3px 3px rgba(0, 128, 128, 0.651);
+    padding: 5px 10px;
+    color: rgba(0, 128, 128, 0.719);
+}
+.text{
+    color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    display: block;
+}
+.text1{
+    color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    top: 48px;
+    left: 60px;
+    display: block;
+}
+.text2{
+    color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    display: block;
+}
+@media screen and (max-width:600px) {
+    .text,.text1,.text2{
+        left: 5rem;
+    }
+}

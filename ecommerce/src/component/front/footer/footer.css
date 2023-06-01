@@ -1,0 +1,29 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+}
+hr{
+    color: teal;
+}
+.copy {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media screen and (max-width:990px) {
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:600px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 60px;
+    }
+}

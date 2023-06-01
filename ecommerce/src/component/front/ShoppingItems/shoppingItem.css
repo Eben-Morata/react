@@ -1,0 +1,124 @@
+.item-card{
+    width: 350px;
+    height: 350px;
+   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.637);
+    background-color: #fff;
+    padding: 0px 20px;
+    margin: 20px 10px;
+    position: relative;
+}
+.items{
+    text-align: center;
+    position: relative;
+}
+.items::after{
+    content: "";
+    position: absolute;
+    top: .8rem;
+    right: 29.5rem;
+    width: 40px;
+    height: 2px;
+    background-color: teal;
+}
+.items::before{
+    content: "";
+    position: absolute;
+    top: .8rem;
+    left: 29.5rem;
+    width: 40px;
+    height: 2px;
+    background-color: teal;
+}
+.items h2{
+    text-transform: uppercase;
+}
+.items-cart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.item-card img{
+    width: 100%;
+    height: 100%;
+}
+.over{
+  background-color: rgba(0, 128, 128, 0.664);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.item-content{
+  position: absolute;
+  top: 10rem;
+  left: 7rem;
+}
+.item-content h2{
+    font-size: 35px;
+    color: #fff;
+    margin-left: 10px;
+}
+.item-content button{
+    padding: 8px 25px;
+    background-color: #fff;
+    color: black;
+    margin:30px 0 0  5px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.801);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.item-content button:active{
+    background-color: black;
+    color: #fff;
+    transform: translateY(2px);
+}
+@media screen and (max-width:1180px){
+  .items-cart{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding: 0 10px;
+  }
+  .item-card{
+        width: 90%;
+  }
+  .item-content{
+     padding-left: 5rem;
+  }
+}
+@media screen and (max-width:870px){
+    .items-cart{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .item-card{
+          width: 90%;
+    }
+    .item-content{
+       padding-left: 9rem;
+    }
+  }
+  @media screen and (max-width:670px){
+      .items-container{
+          margin: 60px 0;
+          padding: 0 40px;
+          box-sizing: border-box;
+      }
+    .items-cart{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .item-card{
+          width: 90%;
+    }
+    .item-content{
+       padding-left: 1rem;
+    }
+    .items::before{
+        top: .8rem;
+        right: 5rem;
+    }
+  }

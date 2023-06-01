@@ -1,0 +1,12 @@
+.home-content{
+    background-color: rgba(0, 204, 255, 0.856);
+    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}

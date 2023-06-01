@@ -1,0 +1,230 @@
+.slider{
+    margin-top: 80px ;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.slide::after{
+   content: "";
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 350px;
+   height: 350px;
+   background-color: teal;
+   border-radius: 50%;
+   z-index: -1;
+}
+.slides{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-in-out;
+}
+@media screen and (min-width:600px) {
+    .slide{
+       width: 100%;
+       height: 100%;
+    }
+}
+.slide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.slide img{
+    width: 35%;
+    height: 30%;
+    margin-left: 50px;
+ }
+ .des h2{
+     font-size: 3.8rem;
+     margin: 10px 7rem;
+     text-align: initial;
+ }
+ .des p{
+    font-size: 1.4rem;
+    margin: 30px 7rem;
+    text-align: initial;
+    color: #a0a0a0;
+}
+.current-slide{
+    opacity: 1;
+    transform: translateX(0);
+}
+.arrow{
+    position: absolute;
+    top: 18rem;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.685);
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    z-index: 111;
+}
+.arrow:hover{
+    background-color: teal;
+    color: #fff;
+}
+.prev{
+    left: 30px;
+}
+.next{
+    right: 30px;
+}
+.butts button{
+    padding: 10px 25px;
+    border: 2px solid gray;
+    font-size: 18px;
+    color: gray;
+    margin: 10px 7rem;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.butts button:hover{
+    padding: 11px 27px;
+    background-color: #a0a0a0;
+    color: #fff;
+    border: none;
+}
+.butts button:active{
+    transform: translateY(3px);
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+@media screen and (max-width:970px){
+    .slide{
+        padding: 70px 20px;
+    }
+    .slide img{
+        width: 50%;
+        height: 300px;
+    }
+    .des h2{
+        font-size: 35px;
+    }
+    .des p{
+        font-size: 20px;
+        text-align: inherit;
+    }
+}
+@media screen and (max-width:870px){
+    .slide{
+        padding: 70px 20px;
+    }
+    .slide img{
+        width: 50%;
+        height: 300px;
+    }
+    .des h2{
+        font-size: 30px;
+    }
+    .des p{
+        font-size: 18px;
+        text-align: inherit;
+    }
+}
+@media screen and (max-width:780px){
+    .slide{
+        padding: 80px 20px;
+    }
+    .slide img{
+        width: 50%;
+        height: 300px;
+    }
+    .des h2{
+        font-size: 25px;
+    }
+    .des p{
+        font-size: 17px;
+        text-align: inherit;
+    }
+}
+@media screen and (max-width:300px) {
+    .slide{
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slide::after{
+        width: 100%;
+        height: 500px;
+        top: 50px;
+    }
+    .slide img{
+        width: 300px;
+        height: 300px;
+    }
+    .butts{
+        text-align: center;
+    }
+    .des h2{
+        font-size: 23px;
+    }
+    .des p{
+        font-size: 18px;
+        text-align: inherit;
+        margin: 10px 5rem;
+    }
+    .arrow{
+        top: 15rem;
+    }
+    .butts button{
+        padding: 10px 20px;
+        font-size: 17px;
+        margin: 0 10rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .slide{
+        padding: 70px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slide::after{
+        width: 100%;
+        height: 500px;
+        top: 50px;
+    }
+    .slide img{
+        width: 300px;
+        height: 300px;
+    }
+    .butts{
+        text-align: center;
+    }
+    .des h2{
+        font-size: 23px;
+    }
+    .des p{
+        font-size: 18px;
+        text-align: inherit;
+        margin: 10px 5rem;
+    }
+    .arrow{
+        top: 15rem;
+    }
+    .butts button{
+        padding: 5px 15px;
+        font-size: 10px;
+        margin: 0 10rem;
+    }
+}

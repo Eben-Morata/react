@@ -1,0 +1,18 @@
+.footer2-container{
+    padding: 20px 10px;
+    text-align: center;
+}
+.footer2-container h2{
+    text-align: left;
+    margin-left: 20px;
+}
+.footer2-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+}
+.footer2-links a{
+    color: rgba(0, 0, 0, 0.699);
+    padding: 10px;
+    font-weight: 500;
+}
